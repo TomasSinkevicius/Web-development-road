@@ -1,3 +1,31 @@
-h1 {
-  color: red;
+header{
+  color:white;
+  width: 100%;
+  position: fixed;        
+  background-color:black;
+  padding: 10px 0;
+  top: 0;
+}
+
+footer {
+  color:white;
+  width: 100%;
+  position: fixed;        
+  background-color:black;
+  padding: 10px 0;
+  bottom: 0;
+}
+nav a{
+  padding: 7px 25px;
+  display: inline-block;
+}
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
 }
