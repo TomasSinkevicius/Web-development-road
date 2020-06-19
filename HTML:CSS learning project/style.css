@@ -1,10 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium';
+}
+
 .main-header{
-  color:white;
-  width: 100%;
-  position: fixed;        
-  background-color:black;
-  padding: 10px 0;
-  top: 0;
+  height: 90vh;
+  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/prairie.jpg);
+  background-size: cover;
+  background-position: center;
+
 }
 
 .main-footer {
@@ -16,20 +21,55 @@
   bottom: 0;
 }
 
-.main-nav a{
-  padding: 7px 25px;
+ul{
+  list-style-type: none;
+  float: right;
+  margin-top: 25px;
+}
+
+ul li{
   display: inline-block;
 }
 
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color:#000;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color:#000;
+}
+
+.logo img{
+  float: left;
+  width: 100px;
+  height: auto; 
+}
+
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1{
+  color: #fff;
+  font-size: 60px;
+}
+
 .container{
-  width: 50%;
-  margin: 0 auto;
-}
-
-.city-image{
-  width: 100%;
-}
-
-.font{
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: static;
+  top: 50%;
+  left: 50%;
 }
