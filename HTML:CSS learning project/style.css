@@ -1,35 +1,93 @@
-.main-header{
-  color:white;
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.main-header {
+  position: fixed;
+  z-index: 1;
   width: 100%;
-  position: fixed;        
-  background-color:black;
-  padding: 10px 0;
-  top: 0;
 }
 
 .main-footer {
-  color:white;
+  color: white;
   width: 100%;
-  position: fixed;        
-  background-color:black;
+  position: fixed;
+  background-color: black;
   padding: 10px 0;
   bottom: 0;
 }
 
-.main-nav a{
-  padding: 7px 25px;
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/prairie.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .title {
+  border: 1px solid red;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.menu-items {
+  list-style-type: none;
+  float: right;
+}
+
+.menu-item {
   display: inline-block;
 }
 
-.container{
-  width: 50%;
-  margin: 0 auto;
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
 }
 
-.city-image{
-  width: 100%;
+.menu-item a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
-.font{
-  font-family: Arial, Helvetica, sans-serif;
+.menu-item.active a {
+  background-color: #fff;
+  color: #000;
+}
+
+.logo img {
+  float: left;
+  width: 100px;
+  height: auto;
+}
+
+
+.title h1 {
+  color: #fff;
+  font-size: 60px;
+}
+
+.container {
+  text-align: center;
+  position: static;
+  top: 50%;
+  left: 50%;
 }
