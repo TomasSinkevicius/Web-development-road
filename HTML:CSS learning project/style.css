@@ -133,9 +133,38 @@ body,
   display: flex;
   justify-content: space-around;
 }
+.col-md-2>img {
+  width: 500px;
+  height: auto;
+  padding-right: 60px;
+}
+.col-md-2{
+  display: flex;
+  padding-bottom: 50px;
+  text-align: left;
+}
 
+.col-md-2 p {
+  width: 60%;
+}
+
+.row-2 {
+  padding: 100px 50px 50px 50px;
+}
+.col-md-3>img {
+  width: 500px;
+  height: auto;
+  padding-left: 60px;
+}
+.col-md-3{
+  display: flex;
+  text-align: right;
+}
+
+.col-md-3 p {
+  width: 60%;
+}
 .container {
-  height: 70vh;
   background-color: #fff;
 }
 
@@ -152,6 +181,6 @@ body,
 }
 
 .footer-left a{
-  color: white!important;
-  text-decoration: none !important;
+  color: white;
+  text-decoration: none;
 }
