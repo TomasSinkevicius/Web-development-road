@@ -19,6 +19,7 @@ body,
   background-color: black;
   padding: 25px 0;
   bottom: 0;
+  text-decoration: none;
 }
 
 .main-nav {
@@ -74,6 +75,9 @@ body,
   color: #000;
   text-shadow: 0;
 }
+.menu-hr{
+  width: 100%;
+}
 
 .menu-item.active a {
   background-color: #fff;
@@ -91,7 +95,7 @@ body,
   font-size: 60px;
 }
 
-.button {
+.title-wrap {
   position: absolute;
   top: 63%;
   left: 50%;
@@ -99,7 +103,7 @@ body,
   text-shadow: 0 0 3px black;
 }
 
-.title-button {
+.button-title {
   border: 1px solid #fff;
   padding: 5px 30px;
   color: #fff;
@@ -107,7 +111,7 @@ body,
   transition: 0.6s ease;
 }
 
-.title-button:hover {
+.button-title:hover {
   background-color: #fff;
   color: #000;
   text-shadow: 0 0 0px black;
@@ -143,8 +147,11 @@ body,
 }
 
 .footer-left{
+  display: flex;
   padding-left: 15px;
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
+}
+
+.footer-left a{
+  color: white!important;
+  text-decoration: none !important;
 }
