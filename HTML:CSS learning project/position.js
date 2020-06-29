@@ -16,13 +16,13 @@ $(document).ready(function () {
             });
       })
       .on("resize", function () {
-        var headerHeight = $('header').outerHeight();
+        var headerHeight = $("header").outerHeight();
         // If the user resizes the window
         pos = $(this).height() - headerHeight;
       });
   };
-  var headerHeight = $('header').outerHeight();
-  var $win = $(window);
-  var winH = $win.height();
-  $("#block-menu").followTo(winH - headerHeight);
+  var headerHeight = $("header").outerHeight();
+  var $window = $(window);
+  var windowHeight = $window.height();
+  $("#block-menu").followTo(windowHeight - headerHeight);
 });
