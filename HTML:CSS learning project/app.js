@@ -24,9 +24,9 @@ $(document).ready(function () {
 
   const containersWithImage = document.querySelectorAll('.js-container-with-image');
 
-  const imgScene1 = getScrollMagicScene(containersWithImage[0], '.row-2', -100);
+  const imgScene1 = getScrollMagicScene(containersWithImage[0], '.row-2', -150);
 
-  const imgScene2 = getScrollMagicScene(containersWithImage[1], '.col-md-3', -250);
+  const imgScene2 = getScrollMagicScene(containersWithImage[1], '.col-md-3', -280);
 
   const aboutScene = getScrollMagicScene(about, '.about', -250);
 
