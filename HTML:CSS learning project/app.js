@@ -3,11 +3,10 @@ $(document).ready(function () {
   const header = document.querySelector('.main-header');
   const menu = document.querySelector('.menu-items');
   const title = document.querySelector('.title');
-  const title_wrap = document.querySelector('.title-wrap');
+  const titleWrap = document.querySelector('.title-wrap');
   const logo = document.querySelector('.logo');
   const row = document.querySelector('.row');
-  const col_md_2 = document.querySelector('.col-md-2');
-  const col_md_3 = document.querySelector('.col-md-3');
+  const about = document.querySelector('.about');
 
   const controller = new ScrollMagic.Controller();
   const timeLine = new TimelineMax();
@@ -18,18 +17,18 @@ $(document).ready(function () {
   timeLine
     .from(menu, 2.5, { y: '-100%' })
     .from(title, 2.5, { top: '45%' }, '-=2.5')
-    .from(title_wrap, 2.5, { top: '65%' }, '-=2.5')
+    .from(titleWrap, 2.5, { top: '65%' }, '-=2.5')
     .from(logo, 2.5, { y: '-100%' }, '-=2.5');
 
-  const rowScene = getScrollMagicScene(row, '.row', 200);
+  const rowScene = getScrollMagicScene(row, '.row', -170);
 
   const containersWithImage = document.querySelectorAll('.js-container-with-image');
 
-  console.log(containersWithImage);
+  const imgScene1 = getScrollMagicScene(containersWithImage[0], '.row-2', -100);
 
-  const imgScene1 = getScrollMagicScene(containersWithImage[0], '.row-2', -150);
+  const imgScene2 = getScrollMagicScene(containersWithImage[1], '.col-md-3', -250);
 
-  const imgScene2 = getScrollMagicScene(containersWithImage[1], '.col-md-2', -200);
+  const aboutScene = getScrollMagicScene(about, '.about', -250);
 
   function getTimelineAnimation(element) {
     const timeline = new TimelineMax();
@@ -47,7 +46,6 @@ $(document).ready(function () {
       reverse: false,
     })
       .setTween(getTimelineAnimation(element))
-      .addIndicators()
       .addTo(controller);
   }
 });
