@@ -231,17 +231,18 @@ body,
   text-decoration: none;
 }
 
-.game-image{
+.game-section{
   text-align: center;
 }
 
-.game-image img{
+.game-section img{
   width: 400px;
   height: auto;
   padding-bottom: 30px;
+  border-radius: 50px 50px 50px 50px;
 }
 
-.game-image h2{
+.game-section h2{
   padding-bottom: 30px;
 }
 
