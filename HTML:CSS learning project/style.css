@@ -3,8 +3,6 @@ body,
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  font-weight: 700;
 }
 
 .main-header {
@@ -20,21 +18,27 @@ body,
   padding: 25px 0;
   bottom: 0;
   text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 700;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: sans-serif;
+  font-weight: 700;
 }
 
 .hero {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(images/prairie.jpg);
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(images/path1.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
+  font-family: sans-serif;
+  font-weight: 700;
 }
 
 .hero .title {
@@ -76,6 +80,11 @@ body,
   text-shadow: 0;
 }
 
+.active {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(50, 50, 57, 1) 100%, rgba(255, 0, 0, 1) 100%);
+}
+
 .menu-hr {
   width: 100%;
 }
@@ -102,6 +111,8 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 0 0 3px black;
+  font-family: sans-serif;
+  font-weight: 700;
 }
 
 .button-title {
@@ -116,6 +127,19 @@ body,
   background-color: #fff;
   color: #000;
   text-shadow: 0 0 0px black;
+}
+
+.hr-after-content {
+  height: 10px;
+  background-color: #fff;
+}
+
+.container {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(50, 50, 57, 1) 100%, rgba(255, 0, 0, 1) 100%);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
 
 .col-md>img {
@@ -133,17 +157,18 @@ body,
   width: 100%;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 100px;
 }
 
 .col-md-2>img {
   width: 500px;
   height: auto;
   padding-right: 60px;
+  border-radius: 120px 20px 120px 20px;
 }
 
 .col-md-2 {
   display: flex;
-  padding-bottom: 50px;
   text-align: left;
 }
 
@@ -152,17 +177,18 @@ body,
 }
 
 .row-2 {
-  padding: 100px 50px 0px 50px;
+  padding: 100px 50px 80px 50px;
 }
 
 .row-3 {
-  padding: 0px 50px 50px 50px;
+  padding: 80px 50px 50px 50px;
 }
 
 .col-md-3>img {
   width: 500px;
   height: auto;
   padding-left: 60px;
+  border-radius: 120px 20px 120px 20px;
 }
 
 .col-md-3 {
@@ -174,10 +200,14 @@ body,
   width: 60%;
 }
 
-.container {
-  background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(50,50,57,1) 100%, rgba(255,0,0,1) 100%);
-  color:white;
+.about-us-header {
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+}
+
+.about-us-text {
+  text-align: center;
+  padding: 0 250px 50px 250px;
 }
 
 .footer-right a {
