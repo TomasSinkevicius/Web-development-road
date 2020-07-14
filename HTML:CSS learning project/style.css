@@ -323,9 +323,9 @@ body {
 
 
 
-/**********************************************
-*** PLAYERS
-**********************************************/
+
+/* *** PLAYERS */
+
 
 .player-name {
   font-size: 40px;
@@ -451,4 +451,43 @@ i {
 .winner .player-name {
   font-weight: 300;
   color: #EB4D4D;
+}
+
+/**********************************************
+*** Hitch a ride
+**********************************************/
+
+.hitch-hero{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/hitch.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: sans-serif;
+}
+.hitch-hero h2 {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  width: 800px;
+  padding-top: 12px;
+  padding-left: 4px;
+  text-shadow: 0 0 2px black;
+  font-weight: 700;
+}
+
+.hitch-button-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px black;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 400;
 }
